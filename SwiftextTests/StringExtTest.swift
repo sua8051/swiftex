@@ -58,6 +58,30 @@ class StringExtTest: XCTestCase {
     }
     
     
+    func testStartIndex()
+    {
+        let string = "acb"
+        XCTAssert(string.index(offsetBy: 0) == string.startIndex, "the frist index")
+    }
+    
+    func testValidSubstring(){
+        let string = "Nothing"
+        let ret = string.substring(from: 0, length: 7)
+        XCTAssert(ret == "Nothing", "The 4 first character is Nothi")
+    }
+    
+    func testInvertSubstring(){
+        let string = "Nothing gona"
+        let ret = string.substring(from: 4, length: -2)
+        XCTAssert(ret == "hi", "From 4 to -2 is hi")
+    }
+    
+    func testInvalidSubstring(){
+        let string = "Nothing gona"
+        let ret = string.substring(from: 0, length: -2)
+        XCTAssert(ret == nil, "From 0 to -2 is nil")
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

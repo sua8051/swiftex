@@ -16,5 +16,22 @@ extension String {
         }
         let index = self.index(startIndex, offsetBy: offset)
         return self[index]
-    }    
+    }
+    
+    public func index(offsetBy index: Int) -> Index? {
+        guard index <= self.characters.count && index > 0 else {return nil}
+        return self.index(startIndex, offsetBy: index)
+    }
+    
+    public func substring(from: Int, length: Int) -> String? {
+        guard let start = self.index(offsetBy: from) else {return nil}
+        var extra = 0
+        if length < 0 {
+            extra = 1
+        }
+        guard let end = self.index(offsetBy: from + length + extra) else {return nil}
+        
+        return length >= 0 ? self[start..<end] : self[end...start]
+    }
 }
+
