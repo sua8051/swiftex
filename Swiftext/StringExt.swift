@@ -10,5 +10,11 @@ import Foundation
 
 
 extension String {
-        
+    public subscript(offset: Int) -> Character?{
+        guard offset < self.characters.count else {
+            return nil
+        }
+        let index = self.index(startIndex, offsetBy: offset)
+        return self[index]
+    }    
 }
