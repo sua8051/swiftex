@@ -19,7 +19,7 @@ extension String {
     }
     
     public func index(offsetBy index: Int) -> Index? {
-        guard index <= self.characters.count && index > 0 else {return nil}
+        guard index <= self.characters.count && index >= 0 else {return nil}
         return self.index(startIndex, offsetBy: index)
     }
     
