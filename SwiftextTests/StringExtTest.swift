@@ -82,7 +82,11 @@ class StringExtTest: XCTestCase {
         XCTAssert(ret == nil, "From 0 to -2 is nil")
     }
     
-    func testExample() {
+    func testFlatString() {
+        
+        let text = "Cộng hoà xã hội chủ nghĩa Việt"
+        XCTAssertTrue(text.flat() == "Cong hoa xa hoi chu nghia Viet")
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

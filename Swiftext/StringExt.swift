@@ -33,5 +33,21 @@ extension String {
         
         return length >= 0 ? self[start..<end] : self[end...start]
     }
+    
+    public func flat() -> String
+    {
+        let tone = "ăâđêôơưàảãạáằẳẵặắầẩẫậấèẻẽẹéềểễệếìỉĩịíòỏõọóồổỗộốờởỡợớùủũụúừửữựứỳỷỹỵýĂÂĐÊÔƠƯÀẢÃẠÁẰẲẴẶẮẦẨẪẬẤÈẺẼẸÉỀỂỄỆẾÌỈĨỊÍÒỎÕỌÓỒỔỖỘỐỜỞỠỢỚÙỦŨỤÚỪỬỮỰỨỲỶỸỴÝ"
+    
+    
+        let flat = "aadeoouaaaaaaaaaaaaaaaeeeeeeeeeeiiiiiooooooooooooooouuuuuuuuuuyyyyyAADEOOUAAAAAAAAAAAAAAAEEEEEEEEEEIIIIIOOOOOOOOOOOOOOOUUUUUUUUUUYYYYY"
+        var ret = self
+        
+        for j in 0..<tone.characters.count{
+            ret = ret.replacingOccurrences(of: "\(tone[j]!)", with: "\(flat[j]!)")                        
+        }
+        
+        return ret
+    }
 }
+
 
