@@ -43,7 +43,7 @@ extension String {
         var ret = self
         
         for j in 0..<tone.characters.count{
-            ret = ret.replacingOccurrences(of: "\(tone[j]!)", with: "\(flat[j]!)")                        
+            ret = ret.replacingOccurrences(of: "\(tone[j]!)", with: "\(flat[j]!)")
         }
         
         return ret
