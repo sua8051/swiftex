@@ -13,7 +13,7 @@ let minuteOnceHour = 60
 let hourOnceDay = 24
 
 extension Date {
-    var string: String {
+    public var string: String {
         let curDate = Date()
         let denta = curDate.timeIntervalSince(self)
         
