@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F826A511F2121370088917B /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F826A501F2121370088917B /* DateExt.swift */; };
+		0F826A531F2122A10088917B /* DateExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F826A521F2122A00088917B /* DateExtTest.swift */; };
 		BA8597131EF511F400201D04 /* Swiftext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8597091EF511F400201D04 /* Swiftext.framework */; };
 		BA85971A1EF511F500201D04 /* Swiftext.h in Headers */ = {isa = PBXBuildFile; fileRef = BA85970C1EF511F400201D04 /* Swiftext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8597241EF5123900201D04 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8597231EF5123900201D04 /* StringExt.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F826A501F2121370088917B /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		0F826A521F2122A00088917B /* DateExtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtTest.swift; sourceTree = "<group>"; };
 		BA8597091EF511F400201D04 /* Swiftext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA85970C1EF511F400201D04 /* Swiftext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swiftext.h; sourceTree = "<group>"; };
 		BA85970D1EF511F400201D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 				BA8597231EF5123900201D04 /* StringExt.swift */,
 				BAD125911EF55D04006FCB60 /* IntExt.swift */,
 				FD4855421F0E251D004BBB23 /* UIColorExt.swift */,
+				0F826A501F2121370088917B /* DateExt.swift */,
 			);
 			path = Swiftext;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			children = (
 				BA8597191EF511F500201D04 /* Info.plist */,
 				BA8597251EF5137300201D04 /* StringExtTest.swift */,
+				0F826A521F2122A00088917B /* DateExtTest.swift */,
 			);
 			path = SwiftextTests;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				BA8597241EF5123900201D04 /* StringExt.swift in Sources */,
 				FD4855431F0E251D004BBB23 /* UIColorExt.swift in Sources */,
 				BAD125921EF55D04006FCB60 /* IntExt.swift in Sources */,
+				0F826A511F2121370088917B /* DateExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8597261EF5137300201D04 /* StringExtTest.swift in Sources */,
+				0F826A531F2122A10088917B /* DateExtTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
